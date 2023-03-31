@@ -36,14 +36,40 @@ console.log(square(6));
 // 5: Write a function named checkStock that satisfies the following interaction pattern:
 // Hint: You will only write one checkStock function that checks the quantity and then prints the corresponding statement.
 
-checkStock(4, "Coffee");
-// => "Coffee is stocked"
+function checkStock(productInven1, productInven2, productInven3, productInven4) {
+    var coffee = productInven1;
+    var tortillas = productInven2;
+    var cheese = productInven3
+    var salsa = productInven4
+           if (coffee >= 4) {
+            console.log("Coffee is stocked");
+           } else {
+            console.log("Coffee - OUT of stock");
+           } if (tortillas < 3) {
+             console.log("Tortillas - running LOW");
+           } else {
+             console.log("Tortillas are stocked");
+           } if (cheese < 3) {
+             console.log("Cheese - OUT of stock");
+           } else {
+             console.log("Cheese is in stock");
+           } if (salsa <= 1) {
+             console.log("Salsa - running LOW");
+           } else {
+             console.log("Salsa is in stock");
+           }
+    return coffee, tortillas, cheese, salsa
+    }
+     console.log(checkStock(4, 3, 0, 1));
 
-checkStock(3, "Tortillas");
-// => "Tortillas - running LOW"
+// checkStock(4, "Coffee");
+// // => "Coffee is stocked"
 
-checkStock(0, "Cheese");
-// => "Cheese - OUT of stock!"
+// checkStock(3, "Tortillas");
+// // => "Tortillas - running LOW"
 
-checkStock(1, "Salsa");
-// => "Salsa - running LOW"
+// checkStock(0, "Cheese");
+// // => "Cheese - OUT of stock!"
+
+// checkStock(1, "Salsa");
+// // => "Salsa - running LOW"
