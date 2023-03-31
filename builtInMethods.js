@@ -57,3 +57,32 @@ console.log(string.length);
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 // Include comments above each method call explaining the impact and return value of that method.
 
+// The pop() method calls on the variable numbers assigned to an array of random numbers
+// This method removes the last element of the array
+// The return value is `[13, 14, 42]`
+// The push() method calls on the variable numbers assigned to an array of random numbers
+// This method adds any number of elements after the last element in the array
+// The return value for push() alone is [13, 14, 42, 23, 69]
+// The return value for both methods ran at the same time is [13, 14, 42, 69]
+// The pop() method has to run before the push() method if we want to replace the last element other wise we would be getting rid of the element we pushed first
+var numbers = [13, 14, 42, 23]
+
+var newLength = numbers.pop();
+var lastElement = numbers.push(69);
+
+console.log(numbers);
+
+// The shift() method calls on the variable cars assigned to an array of car manufacturers
+// This method removes the first element of an array
+// The return value is ["Honda", "Ford", "Chevrolet", "Jeep"]
+// The unshift() method calls on the variable cars assigned to an array of car manufacturers
+// This method adds an element to the very beginnin of an array
+// The return value for unshift() alone is ['Corvette', 'Toyota', 'Honda', 'Ford', 'Chevrolet', 'Jeep']
+// If we want to replace the first element with a new element the shift() method must be ran before the unshift() method
+// This is because we have to remove an element before we add a new element to the beginning of an array
+var cars = ["Toyota", "Honda", "Ford", "Chevrolet", "Jeep"]
+
+var firstElement = cars.shift();
+var firstElement2 = cars.unshift("Corvette");
+
+console.log(cars);
