@@ -39,7 +39,8 @@ makeFreshPesto();
 
 //  EX 4:
 function average(num1, num2) {
-  var avg = num1 / num2;
+  var sum = num1 + num2;
+  var avg = sum / 2
   return avg
 }
 
